@@ -1,0 +1,91 @@
+body {
+    font-family: 'Playfair display', serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(cafe.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px 20px 20px 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    float: left;
+}
+
+header {
+    background-color: #4f3929;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.coffee-menu {
+    margin-top: 20px;
+}
+
+.coffee-menu h2 {
+    color: #6f4e37;
+    font-size: 1.8rem;
+}
+
+.coffee-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.coffee-menu li {
+    font-size: 1.1rem;
+    color: #444;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #4f3929;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
